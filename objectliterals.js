@@ -25,10 +25,32 @@ userOne.profilePic = function(){
         console.log(userOne.email, 'heres your profile pic');
         };
 
-/* when you heave multiple users with same properties that 
-requires the same method use the class function on JS */
-class User: {
+/* 
+when you heave multiple users with same properties that 
+requires the same method use the class function on JS 
+- the 'new' keyword
+- create a new empty object {}
+- set the value of this to be the new empty object 
+- call the constructor method
 
+*/
 
-
+class User {
+    constructor(email, firstName,lastName){
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    login(){
+        console.log(this.email, 'Welcome');
+    }
+    logout(){
+        console.log(this.email, 'Bye');
+    }
 };
+
+var userOne = new User('daniel_eze@gmail.com', 'Daniel', 'Eze');
+var userTwo = new User('ofoedusimon@gmail.com', 'Simon', 'Ofoedu');
+
+userOne.login();
+userTwo.logout();
