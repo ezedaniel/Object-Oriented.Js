@@ -36,10 +36,11 @@ requires the same method use the class function on JS
 */
 
 class User {
-    constructor(email, firstName,lastName){
+    constructor(email, firstName,lastName, age){
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.age = age;
     }
     login(){
         console.log(this.email, 'Welcome');
@@ -49,8 +50,8 @@ class User {
     }
 };
 
-var userOne = new User('daniel_eze@gmail.com', 'Daniel', 'Eze');
-var userTwo = new User('ofoedusimon@gmail.com', 'Simon', 'Ofoedu');
+var userOne = new User('daniel_eze@gmail.com', 'Daniel', 'Eze', '29');
+var userTwo = new User('ofoedusimon@gmail.com', 'Simon', 'Ofoedu', '30');
 
 userOne.login();
 userTwo.logout();
