@@ -41,6 +41,7 @@ class User {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+        this.score = 0;
     }
     login(){
         console.log(this.email, 'Welcome');
