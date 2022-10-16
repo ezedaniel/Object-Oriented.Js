@@ -35,7 +35,7 @@ requires the same method use the class function on JS
 
 */
 
-class User {
+Class User {
     constructor(email, firstName,lastName, age){
         this.email = email;
         this.firstName = firstName;
