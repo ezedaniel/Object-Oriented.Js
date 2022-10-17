@@ -59,4 +59,9 @@ var userOne = new User('daniel_eze@gmail.com', 'Daniel', 'Eze', '29');
 var userTwo = new User('ofoedusimon@gmail.com', 'Simon', 'Ofoedu', '30');
 
 userOne.login();
-userTwo.logout();
+userTwo.logoout();
+
+userOne.login().updatescore().logout()
+
+
+
