@@ -49,6 +49,10 @@ Class User {
     logout(){
         console.log(this.email, 'Bye');
     }
+    updatescore(){
+        this.score ++;
+        console.log (this.email, 'your score is' this.score)
+    }
 };
 
 var userOne = new User('daniel_eze@gmail.com', 'Daniel', 'Eze', '29');
