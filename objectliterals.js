@@ -35,7 +35,7 @@ requires the same method use the class function on JS
 
 */
 
-Class User {
+class User {
     constructor(email, firstName,lastName, age){
         this.email = email;
         this.firstName = firstName;
@@ -45,13 +45,16 @@ Class User {
     }
     login(){
         console.log(this.email, 'Welcome');
+        return this
     }
     logout(){
         console.log(this.email, 'Bye');
+        return this
     }
     updatescore(){
         this.score ++;
-        console.log (this.email, 'your score is' this.score)
+        console.log (this.email, 'your score is', this.score);
+        return this
     }
 };
 
@@ -59,9 +62,9 @@ var userOne = new User('daniel_eze@gmail.com', 'Daniel', 'Eze', '29');
 var userTwo = new User('ofoedusimon@gmail.com', 'Simon', 'Ofoedu', '30');
 
 userOne.login();
-userTwo.logoout();
+userTwo.logout();
 
-userOne.login().updatescore().logout()
-
+userOne.login().updatescore().logout();
+userTwo.login().updatescore().logout();
 
 
